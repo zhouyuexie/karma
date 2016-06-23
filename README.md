@@ -3,17 +3,14 @@
 
 [![Build Status](https://img.shields.io/travis/karma-runner/karma/master.svg?style=flat-square)](https://travis-ci.org/karma-runner/karma) [![Build Status](https://img.shields.io/appveyor/ci/dignifiedquire/karma/master.svg?style=flat-square)](https://ci.appveyor.com/project/dignifiedquire/karma) [![Code Climate](https://img.shields.io/codeclimate/github/karma-runner/karma.svg?style=flat-square)](https://codeclimate.com/github/karma-runner/karma) [![PRs Welcome](https://img.shields.io/badge/prs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Dependency Status](https://img.shields.io/david/karma-runner/karma.svg?style=flat-square)](https://david-dm.org/karma-runner/karma) [![devDependency Status](https://img.shields.io/david/dev/karma-runner/karma.svg?style=flat-square)](https://david-dm.org/karma-runner/karma#info=devDependencies)
 
-A simple tool that allows you to execute JavaScript code in multiple
-_real_ browsers.
+一个简单的工具，可以让你在多个_真实_的浏览器执行JavaScript代码。
 
-> The main purpose of Karma is to make your test-driven development easy,
->  fast, and fun.
+> Karma 的主要目的是让你测试开发驱动：简单、快速、有趣。
 
 
-## Help and Support
+## 帮助和支持.
 
-> For questions and support please use the mailing list or Gitter.
-> The issue tracker is for bug reports and feature discussions only.
+> 对于问题和支持，请使用邮件列表或Gitter。这些问题跟踪是针对错误报告和功能讨论。
 
 * Obligatory [documentation]
 * Quick questions:
@@ -24,75 +21,69 @@ _real_ browsers.
 
 
 
-## When should I use Karma?
+## 我应该什么时候使用 Karma?
 
-* You want to test code in *real* browsers.
-* You want to test code in multiple browsers (desktop, mobile,
-  tablets, etc.).
-* You want to execute your tests locally during development.
-* You want to execute your tests on a continuous integration server.
-* You want to execute your tests on every save.
-* You love your terminal.
-* You don't want your (testing) life to suck.
-* You want to use [Istanbul] to automagically generate coverage
-  reports.
-* You want to use [RequireJS] for your source files.
+* 你想在真正的浏览器中测试代码。
+* 您想在多个浏览器（桌面、移动、平板电脑等）测试代码。
+* 您希望在开发过程中执行您的测试。
+* 您想在一个连续的集成服务器上执行测试。
+* 你想子在执行你的测试中保存每一个测试。
+* 你热爱终端。
+* 不希望你的生活被测试占据。
+* 你希望使用 [Istanbul] 自动生成覆盖报告。
+* 你希望对你的文件使用 [RequireJS] 。
 
 
-## But I still want to use \_insert testing library\_
+## 但是我还想使用 \_insert testing library\_
 
-Karma is not a testing framework, nor an assertion library.
-Karma just launches a HTTP server, and generates the test runner HTML file you probably already know from your favourite testing framework.
-So for testing purposes you can use pretty much anything you like. There are already plugins for most of the common testing frameworks:
+Karma 不是一个测试框架，也不是一个断言库。Karma 只是启动一个HTTP服务器，并生成测试HTML文件，您可能已经知道如何使用你最喜爱的框架进行测试，因此，为了测试的目的，你可以使用几乎你喜欢的任何东西。已经有大多数常见的测试框架的插件：
 
 * [Jasmine]
 * [Mocha]
 * [QUnit]
 * and [many others](https://www.npmjs.org/browse/keyword/karma-adapter)
 
-If you can't find an adapter for your favourite framework, don't worry and write your own.
-It's not that hard and we are here to help.
+如果你找不到你最喜欢的框架的一个适配器，不要担心，你可以自己写，这不是很难，我们在这里提供帮助。
 
 
-## Which Browsers can I use?
+## 我可以使用哪个浏览器？
 
-All the major browsers are supported, if you want to know more see the
-[browsers] page.
+所有主要的浏览器都支持，如果你想知道更多的浏览器[browsers]页面。
 
 
-## Troubleshooting
+## 故障排除.
 See [FAQ](https://karma-runner.github.io/latest/intro/faq.html).
 
 
-## I want to use it. Where do I sign?
+## 我想用它需要在哪里签名？
 
-You don't need to sign anything but here are some resources to help
-you to get started...
-
-
-### Obligatory Screencast.
-
-Every serious project has a screencast, so here is ours.  Just click
-[here] and let the show begin.
+你不需要签署任何东西，这里有一些资源来帮助你开始…
 
 
-### Installation.
+### 必须的视频.
 
-See [installation](https://karma-runner.github.io/latest/intro/installation.html).
+每一个重大的项目有一个视频，所以这是我们的视频。只要点击 [here] ，让它开始。
 
 
-### Using it.
+### 安装.
+
+看这里 [installation](https://karma-runner.github.io/latest/intro/installation.html).
+
+
+### 使用它.
 
 See [configuration](https://karma-runner.github.io/latest/intro/configuration.html).
 
 
-## This is so great. I want to help.
+## 这个非常好，我希望帮助.
 
-Please, see
+请看这里
 [contributing](https://karma-runner.github.io/latest/dev/contributing.html).
 
 
-## Why did you create this?
+## 你为什么要创建这个？
+
+纵观 [AngularJS]的发展，我们一直在使用 [JSTD] 测试。我真的觉得 [JSTD] 是一个伟大的想法。不幸的是，我们已经有关于 [JSTD] 的很多问题，所以我们决定将基于同样的想法创建我们自己的测试工具。我们想要一个简单的工具只是执行JavaScript测试，既稳定又快速。这就是为什么我们使用非常棒的 [Socket.io] 库和 [Node.js]。
 
 Throughout the development of [AngularJS], we've been using [JSTD] for
 testing. I really think that JSTD is a great idea. Unfortunately, we
@@ -102,7 +93,7 @@ executing JavaScript tests that is both stable and fast. That's why we
 use the awesome [Socket.io] library and [Node.js].
 
 
-## My boss wants a license. So where is it?
+## 我的老板想要一个许可证。那么它在哪里呢？
 [MIT License](./LICENSE)
 
 
